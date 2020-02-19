@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "🔮 Projects - Babel configs",
   "main": "src/index.js",
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/crystal-ball/babel-base.git"
