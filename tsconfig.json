@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*"]
+}

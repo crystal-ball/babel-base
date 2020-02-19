@@ -1,0 +1,46 @@
+# Don't Publish Me!
+# -------------------------------------
+
+# Source
+# -------------------------------------
+public
+
+# Output
+# -------------------------------------
+build
+coverage
+monitor
+
+# Logs and caches
+# -------------------------------------
+.esm-cache
+false
+
+# Configs
+# -------------------------------------
+.github
+.storybook
+.vscode
+.eslintignore
+.eslintrc.js
+.prettierignore
+.prettierrc
+babel.config.js
+jsconfig.json
+renovate.json
+tsconfig.json
+webpack.config.js
+
+# Testing
+# -------------------------------------
+__mocks__
+test
+jest.config.js
+src/**/*.spec.js
+src/**/*.spec.js.snap
+
+# Documentation
+# -------------------------------------
+docs
+guides
+documentation.yml

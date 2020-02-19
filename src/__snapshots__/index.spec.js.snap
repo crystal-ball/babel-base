@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babelBase when called with target node, then node babel configs are returned 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": false,
+        "version": "7.8.4",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/usr/code/src",
+        },
+      },
+    ],
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": "commonjs",
+        "useBuiltIns": "entry",
+      },
+    ],
+    "@babel/preset-typescript",
+  ],
+}
+`;
+
+exports[`babelBase when called with target react for dev, then development react configs are returned 1`] = `
+Object {
+  "env": Object {
+    "production": Object {
+      "plugins": Array [
+        "transform-react-remove-prop-types",
+      ],
+    },
+  },
+  "plugins": Array [
+    "react-hot-loader/babel",
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": true,
+        "version": "7.8.4",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/usr/code/src",
+        },
+      },
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": false,
+        "targets": Array [
+          "defaults",
+        ],
+        "useBuiltIns": "entry",
+      },
+    ],
+    Array [
+      "@babel/preset-react",
+      Object {
+        "development": true,
+        "useBuiltIns": true,
+      },
+    ],
+    "@emotion/babel-preset-css-prop",
+    "@babel/preset-typescript",
+  ],
+}
+`;
+
+exports[`babelBase when called with target react for prod, then production react configs are returned 1`] = `
+Object {
+  "env": Object {
+    "production": Object {
+      "plugins": Array [
+        "transform-react-remove-prop-types",
+      ],
+    },
+  },
+  "plugins": Array [
+    "react-hot-loader/babel",
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": true,
+        "version": "7.8.4",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/usr/code/src",
+        },
+      },
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": false,
+        "targets": Array [
+          "defaults",
+        ],
+        "useBuiltIns": "entry",
+      },
+    ],
+    Array [
+      "@babel/preset-react",
+      Object {
+        "development": false,
+        "useBuiltIns": true,
+      },
+    ],
+    "@emotion/babel-preset-css-prop",
+    "@babel/preset-typescript",
+  ],
+}
+`;
+
+exports[`babelBase when called with target react for test, then test react configs are returned 1`] = `
+Object {
+  "env": Object {
+    "production": Object {
+      "plugins": Array [
+        "transform-react-remove-prop-types",
+      ],
+    },
+  },
+  "plugins": Array [
+    "react-hot-loader/babel",
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": false,
+        "version": "7.8.4",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/usr/code/src",
+        },
+      },
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": "commonjs",
+        "targets": Array [
+          "defaults",
+        ],
+        "useBuiltIns": "entry",
+      },
+    ],
+    Array [
+      "@babel/preset-react",
+      Object {
+        "development": false,
+        "useBuiltIns": true,
+      },
+    ],
+    "@emotion/babel-preset-css-prop",
+    "@babel/preset-typescript",
+  ],
+}
+`;
