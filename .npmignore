@@ -21,11 +21,13 @@ false
 .github
 .storybook
 .vscode
+.codeclimate.yml
 .eslintignore
 .eslintrc.js
 .prettierignore
 .prettierrc
 babel.config.js
+CODE_OF_CONDUCT.md
 jsconfig.json
 renovate.json
 tsconfig.json
