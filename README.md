@@ -77,7 +77,7 @@ npm i @babel/runtime -E
 // babel.config.js
 'use strict'
 
-const babelBase = require('@crystal-ball/babel-base')
+const babelBase = require('@crystal-ball/babel-base').default
 
 module.exports = function babelConfigs(api) {
   // Generate base Babel configs for your target project type
