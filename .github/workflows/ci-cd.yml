@@ -54,6 +54,7 @@ jobs:
       - name: Code Climate - Report
         if: success()
         run: |
+          echo "HI"
           echo $TEST_VAR
           echo $GIT_BRANCH
           echo $GIT_COMMIT_SHA
