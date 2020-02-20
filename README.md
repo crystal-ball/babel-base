@@ -62,8 +62,51 @@
   <br />
 </div>
 
-## Setup
+## ⚙️ Setup
 
-Add a `browserslist` to your `package.json` (default or node current)
+**1. Install**
 
-https://github.com/browserslist/browserslist#best-practices
+```sh
+npm i @crystal-ball/babel-base -DE
+npm i @babel/runtime -E
+```
+
+**2. Setup a Babel config**
+
+```javascript
+// babel.config.js
+'use strict'
+
+const babelBase = require('@crystal-ball/babel-base')
+
+module.exports = function babelConfigs(api) {
+  // Generate base Babel configs for your target project type
+  const baseConfigs = babelBase({ env: api.env, target: 'node|react' })
+
+  // Optionally override the base configs as needed
+
+  return baseConfigs
+}
+```
+
+**3. Setup polyfills**
+
+React projects should also setup polyfills for unsupported language features.
+
+```sh
+npm i core-js regenerator-runtime -E
+```
+
+ℹ️ Note that because these packages will be included in the application bundle
+they should be installed as `dependencies`.
+
+```javascript
+// src/index.js
+/**
+ * Polyfill environments, these imports will be transformed to just the
+ * polyfills needed to meet the browserslist targets by the `entry` config for
+ * `@babel/preset-env`
+ */
+import 'core-js'
+import 'regenerator-runtime/runtime'
+```
