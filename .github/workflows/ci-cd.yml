@@ -24,6 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Setup environment variables
+        id: env_vars
         run: |
           # Add required git env values for code cov reporting, ref:
           # https://docs.codeclimate.com/docs/github-actions-test-coverage
@@ -32,10 +33,7 @@ jobs:
           echo $GITHUB_HEAD_REF
           echo $GITHUB_BASE_REF
 
-          export TEST_VAR="hecka"
-          export GIT_BRANCH=$GITHUB_HEAD_REF
-          export GIT_COMMIT_SHA=$GITHUB_SHA
-
+          echo ::set-output name=git_branch::$GITHUB_REF
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -55,12 +53,12 @@ jobs:
         if: success()
         run: |
           echo "HI"
-          echo $TEST_VAR
-          echo $GIT_BRANCH
-          echo $GIT_COMMIT_SHA
+          echo $INPUT_GIT_BRANCH
           ./cc-test-reporter after-build --prefix /usr/src
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          git_branch: ${{ steps.env_vars.outputs.git_branch }}
   publish:
     name: Continuous Deployment
     if: github.ref == 'refs/heads/master'
