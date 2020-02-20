@@ -17,10 +17,10 @@
     <img src="https://snyk.io/test/github/crystal-ball/babel-base/badge.svg?targetFile=package.json" alt="Known vulnerabilities" valign="text-top" />
   </a>
   <a href="https://codeclimate.com/github/crystal-ball/babel-base/test_coverage">
-    <img src="https://api.codeclimate.com/v1/badges/b96df9f9f2fb844ee580/test_coverage" alt="Test coverage" valign="text-top" />
+    <img src="https://api.codeclimate.com/v1/badges/be98f6c629b6473bd3f6/test_coverage" alt="Test coverage" valign="text-top" />
   </a>
   <a href="https://codeclimate.com/github/crystal-ball/babel-base/maintainability">
-    <img src="https://api.codeclimate.com/v1/badges/b96df9f9f2fb844ee580/maintainability" alt="Maintainability" valign="text-top" />
+    <img src="https://api.codeclimate.com/v1/badges/be98f6c629b6473bd3f6/maintainability" alt="Maintainability" valign="text-top" />
   </a>
   <code>:status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
 
