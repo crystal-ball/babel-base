@@ -43,3 +43,23 @@ jobs:
         run: ./cc-test-reporter after-build --prefix /usr/src
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+  publish:
+    name: Continuous Deployment
+    if: github.ref == 'refs/heads/master'
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install
+        run: npm install
+        env:
+          CI: 'true'
+      - name: Semantic Release
+        run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.SEMANTIC_GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.SEMANTIC_NPM_TOKEN }}
