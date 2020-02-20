@@ -16,4 +16,14 @@ module.exports = {
   collectCoverage: true,
   coverageReporters: ['text-summary', 'lcov'],
   collectCoverageFrom: ['src/**/*.js', 'src/**/*.ts'],
+
+  // Require 100% code coverage 🎉
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
 }
