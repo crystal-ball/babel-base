@@ -29,17 +29,4 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 * Configure code coverage threshold in Jest ⚙️ (#5)([10c592b](https://github.com/crystal-ball/babel-base/commit/10c592b92dc8daaf3d5fb57b9bfb170b485dea7a)), closes [#5](https://github.com/crystal-ball/babel-base/issue/5)
 * Configure Semantic Release and Commitizen 🚀 (#7)([9ceb718](https://github.com/crystal-ball/babel-base/commit/9ceb7183fdd247234e4688b8d1ba2af2756da3db)), closes [#7](https://github.com/crystal-ball/babel-base/issue/7)
 
-# @crystal-ball/babel-base changelog
 
-This project strictly adheres to semver and will err on the side of releasing majors when
-changes could possibly introduce breaking changes. This changelog is dynamically generated
-with [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) configured
-with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/semantic-release-base).
-
-> Changelog tags
->
-> - 💥 - Breaking change
-> - 🔖 - Release notes
-> - 💖 - New feature
-> - ✨ - Updates
-> - 🛠 - Fixes
