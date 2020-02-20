@@ -25,6 +25,7 @@ Object {
       Object {
         "corejs": 3,
         "modules": "commonjs",
+        "targets": "node 12",
         "useBuiltIns": "entry",
       },
     ],
@@ -68,9 +69,7 @@ Object {
       Object {
         "corejs": 3,
         "modules": false,
-        "targets": Array [
-          "defaults",
-        ],
+        "targets": "defaults",
         "useBuiltIns": "entry",
       },
     ],
@@ -122,9 +121,7 @@ Object {
       Object {
         "corejs": 3,
         "modules": false,
-        "targets": Array [
-          "defaults",
-        ],
+        "targets": "defaults",
         "useBuiltIns": "entry",
       },
     ],
@@ -176,9 +173,7 @@ Object {
       Object {
         "corejs": 3,
         "modules": "commonjs",
-        "targets": Array [
-          "defaults",
-        ],
+        "targets": "defaults",
         "useBuiltIns": "entry",
       },
     ],

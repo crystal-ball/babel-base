@@ -9,6 +9,8 @@ export default function nodeConfigs() {
         // meet target environment using browserslist config.
         '@babel/preset-env',
         {
+          // Transpile to current LTS
+          targets: 'node 12',
           // Transform modules to common js in test for Jest
           // Disable module transformation in dev and prod builds to allow
           // webpack to smart-manage modules.
