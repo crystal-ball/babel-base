@@ -52,6 +52,9 @@ export default function reactConfigs(env) {
       [
         '@babel/preset-env',
         {
+          // Transpile to browserslist default versions, which is any browser
+          // that isn't dead and has >0.5% market share
+          targets: 'defaults',
           // Transform modules to common js in test for Jest
           // Disable module transformation in dev and prod builds to allow
           // webpack to smart-manage modules.

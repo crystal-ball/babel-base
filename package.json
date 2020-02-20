@@ -53,8 +53,5 @@
     "jest": "25.1.0",
     "typescript": "3.7.5"
   },
-  "browserslist": [
-    "node 12"
-  ],
   "prettier": "@crystal-ball/prettier-base"
 }
