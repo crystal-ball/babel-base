@@ -32,50 +32,50 @@ jobs:
           echo $GITHUB_REF
           echo $GITHUB_HEAD_REF
           echo $GITHUB_BASE_REF
-
-          echo ::set-output name=git_branch::$GITHUB_REF
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - name: Code Climate - Setup
-        run: |
-          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-          chmod +x ./cc-test-reporter
-          ./cc-test-reporter before-build
-      - name: Install
-        run: npm install
-        env:
-          CI: 'true'
-      - name: Test
-        run: npm test
-      - name: Code Climate - Report
-        if: success()
-        run: |
-          echo "HI"
-          echo $INPUT_GIT_BRANCH
-          ./cc-test-reporter after-build --prefix /usr/src
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          git_branch: ${{ steps.env_vars.outputs.git_branch }}
-  publish:
-    name: Continuous Deployment
-    if: github.ref == 'refs/heads/master'
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - name: Install
-        run: npm install
-        env:
-          CI: 'true'
-      - name: Semantic Release
-        run: npx semantic-release
-        env:
-          GH_TOKEN: ${{ secrets.SEMANTIC_GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.SEMANTIC_NPM_TOKEN }}
+          echo $GITHUB_SHA
+          sh ./scripts/setup-env.sh
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: '12'
+  #     - name: Code Climate - Setup
+  #       run: |
+  #         curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  #         chmod +x ./cc-test-reporter
+  #         ./cc-test-reporter before-build
+  #     - name: Install
+  #       run: npm install
+  #       env:
+  #         CI: 'true'
+  #     - name: Test
+  #       run: npm test
+  #     - name: Code Climate - Report
+  #       if: success()
+  #       run: |
+  #         echo "HI"
+  #         echo $INPUT_GIT_BRANCH
+  #         ./cc-test-reporter after-build --prefix /usr/src
+  #       env:
+  #         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+  #       with:
+  #         git_branch: ${{ steps.env_vars.outputs.git_branch }}
+  # publish:
+  #   name: Continuous Deployment
+  #   if: github.ref == 'refs/heads/master'
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v1
+  #       with:
+  #         node-version: '12'
+  #     - name: Install
+  #       run: npm install
+  #       env:
+  #         CI: 'true'
+  #     - name: Semantic Release
+  #       run: npx semantic-release
+  #       env:
+  #         GH_TOKEN: ${{ secrets.SEMANTIC_GH_TOKEN }}
+  #         NPM_TOKEN: ${{ secrets.SEMANTIC_NPM_TOKEN }}
