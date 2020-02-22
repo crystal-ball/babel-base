@@ -31,7 +31,7 @@ jobs:
           echo "SETTING"
           export COMMIT_INFO_BRANCH="${COMMIT_INFO_BRANCH:-${GITHUB_REF:11}}"
           export GIT_COMMIT_SHA=$COMMIT_INFO_SHA
-          export GIT_BRANCH = $COMMIT_INFO_BRANCH
+          export GIT_BRANCH=$COMMIT_INFO_BRANCH
           echo "OUTPUT"
           echo $GIT_COMMIT_SHA
           echo $GIT_BRANCH
