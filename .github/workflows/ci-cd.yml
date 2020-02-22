@@ -40,7 +40,9 @@ jobs:
         run: npm test
       - name: Code Climate - Report
         if: success()
-        run: ./cc-test-reporter after-build
+        run: |
+          export GIT_BRANCH="${GIT_BRANCH:-${GITHUB_REF:11}}"
+          ./cc-test-reporter after-build
         env:
           # Add required git env values for code cov reporting, ref:
           # https://docs.codeclimate.com/docs/github-actions-test-coverage
