@@ -23,14 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Setup master branch
-        if: github.ref == 'refs/heads/master'
-        run: |
-          echo "Master branch"
-          export MASTER_BRANCH="master"
-          export MASTER_SHA=$SHA
-        env:
-          SHA: ${{ github.sha }}
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -48,12 +40,14 @@ jobs:
         run: npm test
       - name: Code Climate - Report
         if: success()
-        run: ./cc-test-reporter after-build --prefix /usr/src
+        run: |
+          export GIT_BRANCH="${GIT_BRANCH:-${GITHUB_REF:11}}"
+          ./cc-test-reporter after-build
         env:
           # Add required git env values for code cov reporting, ref:
           # https://docs.codeclimate.com/docs/github-actions-test-coverage
-          GIT_COMMIT_SHA: ${{ process.env.MASTER_SHA }} || ${{ github.event.pull_request.head.sha }}
-          GIT_BRANCH: ${{ process.env.MASTER_BRANCH }} || ${{ github.head_ref }}
+          GIT_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
+          GIT_BRANCH: ${{ github.head_ref }}
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
   publish:
     name: Continuous Deployment
