@@ -28,12 +28,16 @@ jobs:
         run: |
           # Add required git env values for code cov reporting, ref:
           # https://docs.codeclimate.com/docs/github-actions-test-coverage
-          echo "BRANCH"
-          echo $GITHUB_REF
-          echo $GITHUB_HEAD_REF
-          echo $GITHUB_BASE_REF
-          echo $GITHUB_SHA
-          sh ./scripts/setup-env.sh
+          echo "SETTING"
+          export COMMIT_INFO_BRANCH="${COMMIT_INFO_BRANCH:-${GITHUB_REF:11}}"
+          export GIT_COMMIT_SHA=$COMMIT_INFO_SHA
+          export GIT_BRANCH = $COMMIT_INFO_BRANCH
+          echo "OUTPUT"
+          echo $GIT_COMMIT_SHA
+          echo $GIT_BRANCH
+        env:
+          COMMIT_INFO_BRANCH: ${{ github.head_ref }}
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
   #     - name: Setup Node.js
   #       uses: actions/setup-node@v1
   #       with:
