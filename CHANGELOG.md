@@ -14,6 +14,24 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.2.0](https://github.com/crystal-ball/babel-base/compare/v1.1.1...v1.2.0) (2020-03-03)
+
+
+#### ✨ Update
+
+* Package dependencies to v7.8.6 🆙 (#13)([3817eaa](https://github.com/crystal-ball/babel-base/commit/3817eaac6dc51758fe309d939bf71ae9e9746b97)), closes [#13](https://github.com/crystal-ball/babel-base/issue/13)
+
+#### Chore, Docs
+
+* Configure branch and commit info ⚙️([fd9e486](https://github.com/crystal-ball/babel-base/commit/fd9e48670d079be63b12d6a43a877a76bf7bc9fe))
+* Fix code coverage reporting ⚙️ (#10)([4627aea](https://github.com/crystal-ball/babel-base/commit/4627aea6fb862dc9aff6acb3d1327a19917312b2)), closes [#10](https://github.com/crystal-ball/babel-base/issue/10)
+* Fix CodeClimate reporting env vars ⚙️ (#11)([dfc28d8](https://github.com/crystal-ball/babel-base/commit/dfc28d89a21a2cc0aa439f3345ae5fa6e09ae7dc)), closes [#11](https://github.com/crystal-ball/babel-base/issue/11)
+* Fix expression([3a2a7bc](https://github.com/crystal-ball/babel-base/commit/3a2a7bcdfd3e8c5c6bbecd0ad1b2d04febbccfc4))
+* Ignore addl publish assets ⚙️([1483477](https://github.com/crystal-ball/babel-base/commit/1483477fd4ede20c756c27aded67dbad5b9a3cdd))
+* Setup repo code owners([c3e7b38](https://github.com/crystal-ball/babel-base/commit/c3e7b38a7bcf29089714fc878a11bf40d4522295))
+* Update dev dependencies 🆙 (#12)([28e3087](https://github.com/crystal-ball/babel-base/commit/28e308740601c0cf4a18983af7b5cfc00dbc0916)), closes [#12](https://github.com/crystal-ball/babel-base/issue/12)
+* Update require statement example 📝([35b4167](https://github.com/crystal-ball/babel-base/commit/35b41678766f21d2191af548a475756ac7220970))
+
 ### [1.1.1](https://github.com/crystal-ball/babel-base/compare/v1.1.0...v1.1.1) (2020-02-20)
 
 
