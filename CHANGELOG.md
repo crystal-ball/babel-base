@@ -14,6 +14,17 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.3.0](https://github.com/crystal-ball/babel-base/compare/v1.2.0...v1.3.0) (2020-03-15)
+
+
+#### ✨ Update
+
+* Package dependencies to v7.8.7 🆙 (#15)([24e80b6](https://github.com/crystal-ball/babel-base/commit/24e80b6c09ba9f84f4ecd73fcbc778a995bc9783)), closes [#15](https://github.com/crystal-ball/babel-base/issue/15)
+
+#### Chore
+
+* Update dev dependencies 🆙 (#14)([f731413](https://github.com/crystal-ball/babel-base/commit/f73141357f0c7c26c90f41c68318916c86246b8f)), closes [#14](https://github.com/crystal-ball/babel-base/issue/14)
+
 ## [1.2.0](https://github.com/crystal-ball/babel-base/compare/v1.1.1...v1.2.0) (2020-03-03)
 
 
