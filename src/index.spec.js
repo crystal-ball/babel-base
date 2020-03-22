@@ -2,7 +2,7 @@ jest.mock('path')
 
 import babelBase from './index'
 
-const mockEnv = testEnv => envs => {
+const mockEnv = (testEnv) => (envs) => {
   if (typeof envs === 'string') {
     return envs === testEnv
   }
