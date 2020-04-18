@@ -80,7 +80,6 @@ Object {
         "useBuiltIns": true,
       },
     ],
-    "@emotion/babel-preset-css-prop",
     "@babel/preset-typescript",
   ],
 }
@@ -132,7 +131,6 @@ Object {
         "useBuiltIns": true,
       },
     ],
-    "@emotion/babel-preset-css-prop",
     "@babel/preset-typescript",
   ],
 }
@@ -184,7 +182,6 @@ Object {
         "useBuiltIns": true,
       },
     ],
-    "@emotion/babel-preset-css-prop",
     "@babel/preset-typescript",
   ],
 }

@@ -71,11 +71,6 @@ export default function reactConfigs(env) {
       // references to source and self on each component
       ['@babel/preset-react', { development: env('development'), useBuiltIns: true }],
 
-      // Includes the `babel-plugin-emotion` and configures the transform-react-jsx
-      // plugin to replace `React.createElement` with calls to Emotion's `jsx` to
-      // enable Emotion's CSS in JS
-      '@emotion/babel-preset-css-prop',
-
       // Enable TypeScript usage 🔐
       '@babel/preset-typescript',
     ],
