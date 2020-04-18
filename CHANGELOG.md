@@ -14,6 +14,13 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.6.0](https://github.com/crystal-ball/babel-base/compare/v1.5.0...v1.6.0) (2020-04-18)
+
+
+#### ✨ Update
+
+* Remove emotion from React configs ⚙️([f0d7995](https://github.com/crystal-ball/babel-base/commit/f0d7995038d3ea03b957163bf41ba7e42dd507d1))
+
 ## [1.5.0](https://github.com/crystal-ball/babel-base/compare/v1.4.0...v1.5.0) (2020-04-18)
 
 
