@@ -71,5 +71,10 @@
     "extends": [
       "@crystal-ball/semantic-release-base"
     ]
+  },
+  "renovate": {
+    "extends": [
+      "github>crystal-ball/renovate-base:library"
+    ]
   }
 }
