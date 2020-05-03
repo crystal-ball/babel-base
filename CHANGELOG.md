@@ -14,6 +14,21 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+### [1.6.1](https://github.com/crystal-ball/babel-base/compare/v1.6.0...v1.6.1) (2020-05-03)
+
+
+#### 🛠 Fix
+
+* Include class-properties plugin for Node projects 🎊 (#24)([c73fb62](https://github.com/crystal-ball/babel-base/commit/c73fb62c4e55528fbd77d57e59c5ddea3c92737e)), closes [#24](https://github.com/crystal-ball/babel-base/issue/24)
+
+#### Chore
+
+* Reconfigure Renovate ⚙️ (#21)([1df800d](https://github.com/crystal-ball/babel-base/commit/1df800d93040491e09cd3ae10727eaaa9106cd97)), closes [#21](https://github.com/crystal-ball/babel-base/issue/21)
+* Reconfigure Renovate ⚙️ (#23)([f533b28](https://github.com/crystal-ball/babel-base/commit/f533b28c52696558abcd2b1f7eff603812539183)), closes [#23](https://github.com/crystal-ball/babel-base/issue/23)
+* Update CI/CD configurations ⚙️ (#20)([17de156](https://github.com/crystal-ball/babel-base/commit/17de156f60d214bdb47616cac3f1531f5650363b)), closes [#20](https://github.com/crystal-ball/babel-base/issue/20)
+* Update dev dependencies 🆙 (#19)([1f061e1](https://github.com/crystal-ball/babel-base/commit/1f061e1535d57541c8d16d6cda97f7d37d13f076)), closes [#19](https://github.com/crystal-ball/babel-base/issue/19)
+* Update dev dependencies 🆙 (#22)([15562dd](https://github.com/crystal-ball/babel-base/commit/15562dd2a94212c6fa50004c80d498bf64e09f2b)), closes [#22](https://github.com/crystal-ball/babel-base/issue/22)
+
 ## [1.6.0](https://github.com/crystal-ball/babel-base/compare/v1.5.0...v1.6.0) (2020-04-18)
 
 
