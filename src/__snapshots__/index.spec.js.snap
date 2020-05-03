@@ -7,7 +7,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.9.2",
+        "version": "7.9.6",
       },
     ],
     Array [
@@ -18,6 +18,7 @@ Object {
         },
       },
     ],
+    "@babel/plugin-proposal-class-properties",
   ],
   "presets": Array [
     Array [
@@ -49,7 +50,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.9.2",
+        "version": "7.9.6",
       },
     ],
     Array [
@@ -100,7 +101,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.9.2",
+        "version": "7.9.6",
       },
     ],
     Array [
@@ -151,7 +152,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.9.2",
+        "version": "7.9.6",
       },
     ],
     Array [
