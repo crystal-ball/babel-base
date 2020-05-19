@@ -110,3 +110,22 @@ they should be installed as `dependencies`.
 import 'core-js'
 import 'regenerator-runtime/runtime'
 ```
+
+## Configurations
+
+**Import aliases**
+
+The import aliases passed to `babel-plugin-transform-import-aliases` can be
+configured by passing an `aliases` object when creating base configs:
+
+```javascript
+const babelBase = require('@crystal-ball/babel-base').default
+
+module.exports = function babelConfigs(api) {
+  return babelBase({
+    aliases: { '@': path.resolve('dist') },
+    env: api.env,
+    target: 'node|react',
+  })
+}
+```
