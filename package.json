@@ -34,11 +34,11 @@
     "clean": "rm -rf dist types"
   },
   "dependencies": {
-    "@babel/core": "7.9.0",
+    "@babel/core": "7.9.6",
     "@babel/plugin-proposal-class-properties": "7.8.3",
     "@babel/plugin-proposal-private-methods": "7.8.3",
-    "@babel/plugin-transform-runtime": "7.9.0",
-    "@babel/preset-env": "7.9.5",
+    "@babel/plugin-transform-runtime": "7.9.6",
+    "@babel/preset-env": "7.9.6",
     "@babel/preset-react": "7.9.4",
     "@babel/preset-typescript": "7.9.0",
     "babel-plugin-transform-import-aliases": "1.0.0",
@@ -49,12 +49,12 @@
     "@crystal-ball/commitizen-base": "2.6.0",
     "@crystal-ball/prettier-base": "2.2.0",
     "@crystal-ball/semantic-release-base": "2.17.0",
-    "@types/jest": "25.2.1",
-    "@types/node": "13.13.4",
+    "@types/jest": "25.2.3",
+    "@types/node": "14.0.1",
     "eslint-config-eloquence": "13.8.0",
     "husky": "4.2.5",
-    "jest": "25.4.0",
-    "typescript": "3.8.3"
+    "jest": "26.0.1",
+    "typescript": "3.9.2"
   },
   "prettier": "@crystal-ball/prettier-base",
   "config": {
