@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`babelBase when called with target node and aliases, then tranform aliases applied 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": false,
+        "version": "7.9.6",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/opt/service/radical",
+        },
+      },
+    ],
+    "@babel/plugin-proposal-class-properties",
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": "commonjs",
+        "targets": "node 12",
+        "useBuiltIns": "entry",
+      },
+    ],
+    "@babel/preset-typescript",
+  ],
+}
+`;
+
 exports[`babelBase when called with target node, then node babel configs are returned 1`] = `
 Object {
   "plugins": Array [
@@ -28,6 +63,57 @@ Object {
         "modules": "commonjs",
         "targets": "node 12",
         "useBuiltIns": "entry",
+      },
+    ],
+    "@babel/preset-typescript",
+  ],
+}
+`;
+
+exports[`babelBase when called with target react and aliases, then tranform aliases applied 1`] = `
+Object {
+  "env": Object {
+    "production": Object {
+      "plugins": Array [
+        "transform-react-remove-prop-types",
+      ],
+    },
+  },
+  "plugins": Array [
+    "react-hot-loader/babel",
+    Array [
+      "@babel/plugin-transform-runtime",
+      Object {
+        "useESModules": false,
+        "version": "7.9.6",
+      },
+    ],
+    Array [
+      "babel-plugin-transform-import-aliases",
+      Object {
+        "aliases": Object {
+          "@": "/opt/service/radical",
+        },
+      },
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods",
+  ],
+  "presets": Array [
+    Array [
+      "@babel/preset-env",
+      Object {
+        "corejs": 3,
+        "modules": false,
+        "targets": "defaults",
+        "useBuiltIns": "entry",
+      },
+    ],
+    Array [
+      "@babel/preset-react",
+      Object {
+        "development": false,
+        "useBuiltIns": true,
       },
     ],
     "@babel/preset-typescript",

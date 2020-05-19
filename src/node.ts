@@ -1,7 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 
-export default function nodeConfigs() {
+interface Options {
+  aliases?: { [key: string]: string }
+}
+
+export default function nodeConfigs(opts: Options) {
   return {
     presets: [
       [
@@ -52,7 +56,11 @@ export default function nodeConfigs() {
       // Transforms aliased imports to resolveable paths
       [
         'babel-plugin-transform-import-aliases',
-        { aliases: { '@': path.resolve(fs.realpathSync(process.cwd()), 'src') } },
+        {
+          aliases: opts.aliases || {
+            '@': path.resolve(fs.realpathSync(process.cwd()), 'src'),
+          },
+        },
       ],
 
       // --- Additional stage-3 proposals not present in preset-env set

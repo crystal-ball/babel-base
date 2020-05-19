@@ -1,6 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 
+interface Options {
+  aliases?: { [key: string]: string }
+}
+
 /**
  * 📝 Babel configurations
  *
@@ -42,7 +46,7 @@ import path from 'path'
  *   compilation) Note that enabling this requires adding `@babel/runtime-corejs3`
  *   as a dependency.
  */
-export default function reactConfigs(env) {
+export default function reactConfigs(env, opts: Options) {
   return {
     // --------------------------------------------------------
     // Presets
@@ -107,7 +111,11 @@ export default function reactConfigs(env) {
       // Transforms aliased imports to resolveable paths
       [
         'babel-plugin-transform-import-aliases',
-        { aliases: { '@': path.resolve(fs.realpathSync(process.cwd()), 'src') } },
+        {
+          aliases: opts.aliases || {
+            '@': path.resolve(fs.realpathSync(process.cwd()), 'src'),
+          },
+        },
       ],
 
       // --- Additional stage-3 proposals not present in preset-env set

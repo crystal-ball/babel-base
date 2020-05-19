@@ -15,8 +15,28 @@ describe('babelBase', () => {
     expect(babelBase({ env: mockEnv(), target: 'node' })).toMatchSnapshot()
   })
 
+  test('when called with target node and aliases, then tranform aliases applied', () => {
+    expect(
+      babelBase({
+        aliases: { '@': '/opt/service/radical' },
+        env: mockEnv(),
+        target: 'node',
+      }),
+    ).toMatchSnapshot()
+  })
+
   test('when called with target react for dev, then development react configs are returned', () => {
     expect(babelBase({ env: mockEnv('development'), target: 'react' })).toMatchSnapshot()
+  })
+
+  test('when called with target react and aliases, then tranform aliases applied', () => {
+    expect(
+      babelBase({
+        aliases: { '@': '/opt/service/radical' },
+        env: mockEnv(),
+        target: 'react',
+      }),
+    ).toMatchSnapshot()
   })
 
   test('when called with target react for test, then test react configs are returned', () => {
