@@ -14,6 +14,13 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.8.0](https://github.com/crystal-ball/babel-base/compare/v1.7.0...v1.8.0) (2020-05-20)
+
+
+#### 💖 New
+
+* Relative alias import transforms 🎊([a49ff11](https://github.com/crystal-ball/babel-base/commit/a49ff111924226cb833751a1a1f3d9613afb55f0))
+
 ## [1.7.0](https://github.com/crystal-ball/babel-base/compare/v1.6.1...v1.7.0) (2020-05-19)
 
 
