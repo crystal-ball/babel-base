@@ -2,6 +2,8 @@
  * Babel entry
  */
 
+import { TransformOptions } from '@babel/core'
+
 import nodeConfigs from './node'
 import reactConfigs from './react'
 
@@ -10,11 +12,6 @@ type Options = {
   target: 'node' | 'react'
 }
 
-type Configs = {
-  presets: Array<any>
-  plugins: Array<any>
-}
-
-export default function babelBase({ env, target }: Options): Configs {
+export default function babelBase({ env, target }: Options): TransformOptions {
   return target === 'node' ? nodeConfigs() : reactConfigs(env)
 }
