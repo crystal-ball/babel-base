@@ -1,6 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 
+import { TransformOptions } from '@babel/core'
+
+// Is this available from Babel directly?
+type Envs = 'development' | 'production' | 'test'
+type Env = (env: Envs | Envs[]) => boolean
+
 /**
  * 📝 Babel configurations
  *
@@ -42,7 +48,7 @@ import path from 'path'
  *   compilation) Note that enabling this requires adding `@babel/runtime-corejs3`
  *   as a dependency.
  */
-export default function reactConfigs(env) {
+export default function reactConfigs(env: Env): TransformOptions {
   return {
     // --------------------------------------------------------
     // Presets

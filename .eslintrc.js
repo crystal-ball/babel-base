@@ -2,7 +2,13 @@
 
 const eloquence = require('eslint-config-eloquence')
 
-module.exports = {
-  root: true,
-  ...eloquence({ target: 'node' }),
+const configs = eloquence({ target: 'node' })
+
+configs.rules = {
+  ...configs.rules,
+
+  // No async setup hook provided for Babel configs
+  'node/no-sync': 'off',
 }
+
+module.exports = configs

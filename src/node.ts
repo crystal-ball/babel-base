@@ -1,7 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 
-export default function nodeConfigs() {
+import { TransformOptions } from '@babel/core'
+
+export default function nodeConfigs(): TransformOptions {
   return {
     presets: [
       [
