@@ -1,6 +1,6 @@
 jest.mock('path')
 
-import babelBase from './index'
+import babelBase from '.'
 
 const mockEnv = (testEnv) => (envs) => {
   if (typeof envs === 'string') {
