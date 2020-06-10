@@ -49,7 +49,7 @@
     "@crystal-ball/commitizen-base": "2.7.1",
     "@crystal-ball/prettier-base": "2.2.0",
     "@crystal-ball/semantic-release-base": "2.19.0",
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.0",
     "@types/node": "14.0.13",
     "eslint-config-eloquence": "14.4.0",
     "husky": "4.2.5",
