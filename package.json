@@ -50,11 +50,11 @@
     "@crystal-ball/prettier-base": "2.2.0",
     "@crystal-ball/semantic-release-base": "2.19.0",
     "@types/jest": "25.2.3",
-    "@types/node": "14.0.9",
-    "eslint-config-eloquence": "14.3.2",
+    "@types/node": "14.0.13",
+    "eslint-config-eloquence": "14.4.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   },
   "prettier": "@crystal-ball/prettier-base",
   "config": {
