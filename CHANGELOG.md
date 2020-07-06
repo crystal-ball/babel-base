@@ -14,6 +14,22 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.10.0](https://github.com/crystal-ball/babel-base/compare/v1.9.0...v1.10.0) (2020-07-06)
+
+
+#### ✨ Update
+
+* Babel 7.10 🆙 (#43)([60a4d18](https://github.com/crystal-ball/babel-base/commit/60a4d18298d00f724cc51a598fc5bc56a9fdae8f)), closes [#43](https://github.com/crystal-ball/babel-base/issue/43)
+
+#### Chore
+
+* Update devDependencies 🆙([674f61e](https://github.com/crystal-ball/babel-base/commit/674f61ebd8f831a52ab4a70fd0eb2678201ea9b1))
+* Update devDependencies 🆙 (#36)([a771dd4](https://github.com/crystal-ball/babel-base/commit/a771dd4ce13044775159727db99c6ba6b7b12c44)), closes [#36](https://github.com/crystal-ball/babel-base/issue/36)
+* Update devDependencies 🆙 (#37)([ec0b80f](https://github.com/crystal-ball/babel-base/commit/ec0b80f4a3b086d51e84d75c9402e2afda688ae3)), closes [#37](https://github.com/crystal-ball/babel-base/issue/37)
+* Update devDependencies 🆙 (#39)([e234f4b](https://github.com/crystal-ball/babel-base/commit/e234f4bd74e650a19c2f3a94f216ee4db52f6f4b)), closes [#39](https://github.com/crystal-ball/babel-base/issue/39)
+* Update package @types/jest to v26 🆙 (#38)([f21a3d3](https://github.com/crystal-ball/babel-base/commit/f21a3d316816ed29965dd37f0b96b9801ed062db)), closes [#38](https://github.com/crystal-ball/babel-base/issue/38)
+* Update package jest to v26.1.0 🆙 (#40)([bbe5d4e](https://github.com/crystal-ball/babel-base/commit/bbe5d4e942a8a61b2a49108827e310051195900f)), closes [#40](https://github.com/crystal-ball/babel-base/issue/40)
+
 ## [1.9.0](https://github.com/crystal-ball/babel-base/compare/v1.8.0...v1.9.0) (2020-05-31)
 
 
