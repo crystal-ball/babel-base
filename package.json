@@ -34,27 +34,27 @@
     "clean": "rm -rf dist types"
   },
   "dependencies": {
-    "@babel/core": "7.10.2",
-    "@babel/plugin-proposal-class-properties": "7.10.1",
-    "@babel/plugin-proposal-private-methods": "7.10.1",
-    "@babel/plugin-transform-runtime": "7.10.1",
-    "@babel/preset-env": "7.10.2",
-    "@babel/preset-react": "7.10.1",
-    "@babel/preset-typescript": "7.10.1",
+    "@babel/core": "7.10.4",
+    "@babel/plugin-proposal-class-properties": "7.10.4",
+    "@babel/plugin-proposal-private-methods": "7.10.4",
+    "@babel/plugin-transform-runtime": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
     "babel-plugin-transform-import-aliases": "1.2.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.3",
+    "@babel/cli": "7.10.4",
     "@crystal-ball/commitizen-base": "2.7.1",
     "@crystal-ball/prettier-base": "2.2.0",
-    "@crystal-ball/semantic-release-base": "2.19.0",
-    "@types/jest": "26.0.0",
-    "@types/node": "14.0.13",
-    "eslint-config-eloquence": "14.5.0",
+    "@crystal-ball/semantic-release-base": "2.20.0",
+    "@types/jest": "26.0.4",
+    "@types/node": "14.0.18",
+    "eslint-config-eloquence": "14.6.0",
     "husky": "4.2.5",
     "jest": "26.1.0",
-    "typescript": "3.9.5"
+    "typescript": "3.9.6"
   },
   "prettier": "@crystal-ball/prettier-base",
   "config": {

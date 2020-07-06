@@ -56,9 +56,6 @@ export default function nodeConfigs(): TransformOptions {
         'babel-plugin-transform-import-aliases',
         { aliases: { '@': path.resolve(fs.realpathSync(process.cwd()), 'src') } },
       ],
-
-      // --- Additional stage-3 proposals not present in preset-env set
-      '@babel/plugin-proposal-class-properties',
     ],
   }
 }
