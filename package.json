@@ -51,7 +51,7 @@
     "@crystal-ball/semantic-release-base": "2.20.0",
     "@types/jest": "26.0.4",
     "@types/node": "14.0.19",
-    "eslint-config-eloquence": "14.6.0",
+    "eslint-config-eloquence": "14.7.0",
     "husky": "4.2.5",
     "jest": "26.1.0",
     "typescript": "3.9.6"
