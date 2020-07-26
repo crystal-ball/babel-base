@@ -14,6 +14,20 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.11.0](https://github.com/crystal-ball/babel-base/compare/v1.10.0...v1.11.0) (2020-07-26)
+
+
+#### ✨ Update
+
+* Dependencies to v7.10.5 🆙 (#47)([dd98827](https://github.com/crystal-ball/babel-base/commit/dd988278eb5ed9990a7617b40bae7963f1a411cd)), closes [#47](https://github.com/crystal-ball/babel-base/issue/47)
+
+#### Chore
+
+* Update devDependencies 🆙 (#46)([f044c0a](https://github.com/crystal-ball/babel-base/commit/f044c0a1aa10a2427fadc43a982f095c06fd70c4)), closes [#46](https://github.com/crystal-ball/babel-base/issue/46)
+* Update devDependencies 🆙 (#48)([3103496](https://github.com/crystal-ball/babel-base/commit/310349630f7f79d480ef5a67b1897df639cdd2a2)), closes [#48](https://github.com/crystal-ball/babel-base/issue/48)
+* Update package @types/node to v14.0.19 🆙 (#44)([3adfd6d](https://github.com/crystal-ball/babel-base/commit/3adfd6d990ac2ffa0da23eb96d071cc4634b1449)), closes [#44](https://github.com/crystal-ball/babel-base/issue/44)
+* Update package eslint-config-eloquence to v14.7.0 🆙 (#45)([204b8b7](https://github.com/crystal-ball/babel-base/commit/204b8b732b1364c6d00509118a92178a574c61dc)), closes [#45](https://github.com/crystal-ball/babel-base/issue/45)
+
 ## [1.10.0](https://github.com/crystal-ball/babel-base/compare/v1.9.0...v1.10.0) (2020-07-06)
 
 
