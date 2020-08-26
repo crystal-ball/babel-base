@@ -53,7 +53,7 @@
     "@types/node": "14.6.0",
     "eslint-config-eloquence": "14.10.0",
     "husky": "4.2.5",
-    "jest": "26.4.0",
+    "jest": "26.4.2",
     "typescript": "3.9.7"
   },
   "prettier": "@crystal-ball/prettier-base",
