@@ -45,12 +45,12 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.5",
+    "@babel/cli": "7.11.5",
     "@crystal-ball/commitizen-base": "2.7.1",
     "@crystal-ball/prettier-base": "2.2.0",
     "@crystal-ball/semantic-release-base": "2.20.0",
-    "@types/jest": "26.0.10",
-    "@types/node": "14.6.0",
+    "@types/jest": "26.0.12",
+    "@types/node": "14.6.2",
     "eslint-config-eloquence": "14.10.0",
     "husky": "4.2.5",
     "jest": "26.4.2",
