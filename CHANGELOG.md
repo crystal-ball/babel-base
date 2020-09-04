@@ -14,6 +14,21 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.13.0](https://github.com/crystal-ball/babel-base/compare/v1.12.0...v1.13.0) (2020-09-04)
+
+
+#### ✨ Update
+
+* Dependencies 🆙 (#55)([66fd861](https://github.com/crystal-ball/babel-base/commit/66fd8619d4668289c8d493383a4c0145c30e3e48)), closes [#55](https://github.com/crystal-ball/babel-base/issue/55)
+
+#### Chore
+
+* Update devDependencies 🆙 (#52)([df0ac9a](https://github.com/crystal-ball/babel-base/commit/df0ac9aae86dcd92387f42524df6472a0d4c3eeb)), closes [#52](https://github.com/crystal-ball/babel-base/issue/52)
+* Update devDependencies 🆙 (#53)([2a665a7](https://github.com/crystal-ball/babel-base/commit/2a665a757474a95d507c01f2d69b5aa123e78248)), closes [#53](https://github.com/crystal-ball/babel-base/issue/53)
+* Update devDependencies 🆙 (#57)([d74ec41](https://github.com/crystal-ball/babel-base/commit/d74ec411bc155c1b3eb67fa74422afa93e6ec53a)), closes [#57](https://github.com/crystal-ball/babel-base/issue/57)
+* Update package jest to v26.4.2 🆙 (#54)([820c31c](https://github.com/crystal-ball/babel-base/commit/820c31c8c5f4b61e5abb77d3cb9b587e2e75447d)), closes [#54](https://github.com/crystal-ball/babel-base/issue/54)
+* Update package typescript to v4 🆙 (#56)([4f0a1a1](https://github.com/crystal-ball/babel-base/commit/4f0a1a13ea183deeef007c859a2b64399e5fe0ce)), closes [#56](https://github.com/crystal-ball/babel-base/issue/56)
+
 ## [1.12.0](https://github.com/crystal-ball/babel-base/compare/v1.11.0...v1.12.0) (2020-08-06)
 
 
