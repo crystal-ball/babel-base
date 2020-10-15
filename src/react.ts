@@ -73,9 +73,11 @@ export default function reactConfigs(env: Env): TransformOptions {
         },
       ],
 
-      // Includes plugins required to transform JSX. Development plugins add
-      // references to source and self on each component
-      ['@babel/preset-react', { development: env('development'), useBuiltIns: true }],
+      // Includes plugins required to transform JSX and opts in to the automatic
+      // runtime which auto imports the functions that JSX transpiles to.
+      // Development option toggles plugins that add references to source and
+      // self on each component
+      ['@babel/preset-react', { development: env('development'), runtime: 'automatic' }],
 
       // Enable TypeScript usage 🔐
       '@babel/preset-typescript',
