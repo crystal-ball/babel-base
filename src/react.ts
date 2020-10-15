@@ -77,7 +77,9 @@ export default function reactConfigs(env: Env): TransformOptions {
       // runtime which auto imports the functions that JSX transpiles to.
       // Development option toggles plugins that add references to source and
       // self on each component
-      ['@babel/preset-react', { development: env('development'), runtime: 'automatic' }],
+      ['@babel/preset-react', { development: env('development'), useBuiltIns: true }],
+      // Disabled until I can figure out why MDX fails with automatic runtime
+      // ['@babel/preset-react', { development: env('development'), runtime: 'automatic' }],
 
       // Enable TypeScript usage 🔐
       '@babel/preset-typescript',
