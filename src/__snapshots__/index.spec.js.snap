@@ -75,7 +75,7 @@ Object {
       "@babel/preset-react",
       Object {
         "development": true,
-        "runtime": "automatic",
+        "useBuiltIns": true,
       },
     ],
     "@babel/preset-typescript",
@@ -124,7 +124,7 @@ Object {
       "@babel/preset-react",
       Object {
         "development": false,
-        "runtime": "automatic",
+        "useBuiltIns": true,
       },
     ],
     "@babel/preset-typescript",
@@ -173,7 +173,7 @@ Object {
       "@babel/preset-react",
       Object {
         "development": false,
-        "runtime": "automatic",
+        "useBuiltIns": true,
       },
     ],
     "@babel/preset-typescript",
