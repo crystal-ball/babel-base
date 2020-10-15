@@ -14,6 +14,23 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [1.14.0](https://github.com/crystal-ball/babel-base/compare/v1.13.0...v1.14.0) (2020-10-15)
+
+
+#### 💖 New
+
+* Enable React automatic runtime transforms 💖 (#65)([6214d46](https://github.com/crystal-ball/babel-base/commit/6214d46db6e940245488feb6ce3c10532e4ba33f)), closes [#65](https://github.com/crystal-ball/babel-base/issue/65)
+
+#### Chore
+
+* Update devDependencies 🆙 (#58)([3c51bb7](https://github.com/crystal-ball/babel-base/commit/3c51bb7fd8250724a6ce52f8f0c2514800d64525)), closes [#58](https://github.com/crystal-ball/babel-base/issue/58)
+* Update devDependencies 🆙 (#61)([ca6cd03](https://github.com/crystal-ball/babel-base/commit/ca6cd039f5fff146aa879d07f4ab0deaee1c9b96)), closes [#61](https://github.com/crystal-ball/babel-base/issue/61)
+* Update devDependencies 🆙 (#63)([7148689](https://github.com/crystal-ball/babel-base/commit/71486895edf7f95556e2da05cfce3d8711808fcf)), closes [#63](https://github.com/crystal-ball/babel-base/issue/63)
+* Update devDependencies 🆙 (#64)([4d23b07](https://github.com/crystal-ball/babel-base/commit/4d23b07bfdd866b784feb3923feac63428af00ae)), closes [#64](https://github.com/crystal-ball/babel-base/issue/64)
+* Update package @types/node to v14.10.2 🆙 (#59)([5c8e55a](https://github.com/crystal-ball/babel-base/commit/5c8e55a46ee5064660c1946c7ba683d75d76a985)), closes [#59](https://github.com/crystal-ball/babel-base/issue/59)
+* Update package eslint-config-eloquence to v15 🆙 (#60)([3f9127a](https://github.com/crystal-ball/babel-base/commit/3f9127a6dc0247ce861fe3106b19558adbe8ca4c)), closes [#60](https://github.com/crystal-ball/babel-base/issue/60)
+* Update package eslint-config-eloquence to v16 🆙 (#62)([c6ac29f](https://github.com/crystal-ball/babel-base/commit/c6ac29f93fa07a224512d1e511ded633341b1618)), closes [#62](https://github.com/crystal-ball/babel-base/issue/62)
+
 ## [1.13.0](https://github.com/crystal-ball/babel-base/compare/v1.12.0...v1.13.0) (2020-09-04)
 
 
