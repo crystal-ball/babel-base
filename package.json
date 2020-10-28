@@ -1,6 +1,6 @@
 {
   "name": "@crystal-ball/babel-base",
-  "version": "1.14.1",
+  "version": "1.15.0",
   "description": "🔮 Projects - Babel configs",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
