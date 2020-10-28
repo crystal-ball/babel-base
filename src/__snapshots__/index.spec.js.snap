@@ -7,7 +7,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.10.4",
+        "version": "7.12.1",
       },
     ],
     Array [
@@ -49,7 +49,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.10.4",
+        "version": "7.12.1",
       },
     ],
     Array [
@@ -98,7 +98,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.10.4",
+        "version": "7.12.1",
       },
     ],
     Array [
@@ -147,7 +147,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.10.4",
+        "version": "7.12.1",
       },
     ],
     Array [
