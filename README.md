@@ -79,9 +79,12 @@ npm i @babel/runtime -E
 
 const babelBase = require('@crystal-ball/babel-base').default
 
-module.exports = function babelConfigs(api) {
+module.exports = function babelConfigs() {
   // Generate base Babel configs for your target project type
-  const baseConfigs = babelBase({ env: api.env, target: 'node|react' })
+  const baseConfigs = babelBase({
+    env: 'development|production|test',
+    target: 'node|react',
+  })
 
   // Optionally override the base configs as needed
 
