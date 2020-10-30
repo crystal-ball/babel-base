@@ -14,6 +14,22 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [2.0.0](https://github.com/crystal-ball/babel-base/compare/v1.15.0...v2.0.0) (2020-10-30)
+
+
+### 💥 Breaking Changes!
+
+* The env option should be changed to one of development, test, or production
+
+
+#### 💖 New
+
+* Automatic runtime support 💖 (#72)([83e66e8](https://github.com/crystal-ball/babel-base/commit/83e66e8055da6d3a509e3cb081e9eb02a49b496b)), closes [#72](https://github.com/crystal-ball/babel-base/issue/72)
+
+#### Chore
+
+* CI-CD caching and checkout upgrades ⚙️ (#71)([c15b117](https://github.com/crystal-ball/babel-base/commit/c15b117c543c15eb4114c2c56768649b996b188e)), closes [#71](https://github.com/crystal-ball/babel-base/issue/71)
+
 ## [1.15.0](https://github.com/crystal-ball/babel-base/compare/v1.14.1...v1.15.0) (2020-10-28)
 
 
