@@ -4,11 +4,12 @@
 
 import { TransformOptions } from '@babel/core'
 
+import { Env } from './types'
 import nodeConfigs from './node'
 import reactConfigs from './react'
 
 type Options = {
-  env: (string) => boolean
+  env: Env
   target: 'node' | 'react'
 }
 
