@@ -3,9 +3,8 @@ import path from 'path'
 
 import { TransformOptions } from '@babel/core'
 
-// Is this available from Babel directly?
-type Envs = 'development' | 'production' | 'test'
-type Env = (env: Envs | Envs[]) => boolean
+import { Env } from './types'
+import { testEnv } from './test-env'
 
 /**
  * 📝 Babel configurations
@@ -64,7 +63,7 @@ export default function reactConfigs(env: Env): TransformOptions {
           // Transform modules to common js in test for Jest
           // Disable module transformation in dev and prod builds to allow
           // webpack to smart-manage modules.
-          modules: env('test') ? 'commonjs' : false,
+          modules: testEnv(env, ['test']) ? 'commonjs' : false,
           // Transforms the core-js and regenerator-runtime imports in index.js
           // to only the polyfills needed for the target environments
           useBuiltIns: 'entry',
@@ -77,9 +76,10 @@ export default function reactConfigs(env: Env): TransformOptions {
       // runtime which auto imports the functions that JSX transpiles to.
       // Development option toggles plugins that add references to source and
       // self on each component
-      ['@babel/preset-react', { development: env('development'), useBuiltIns: true }],
-      // Disabled until I can figure out why MDX fails with automatic runtime
-      // ['@babel/preset-react', { development: env('development'), runtime: 'automatic' }],
+      [
+        '@babel/preset-react',
+        { development: testEnv(env, ['development']), runtime: 'automatic' },
+      ],
 
       // Enable TypeScript usage 🔐
       '@babel/preset-typescript',
@@ -107,7 +107,7 @@ export default function reactConfigs(env: Env): TransformOptions {
       [
         '@babel/plugin-transform-runtime',
         {
-          useESModules: env(['development', 'production']),
+          useESModules: testEnv(env, ['development', 'production']),
           // https://github.com/babel/babel/issues/10261
           // eslint-disable-next-line
           version: require('@babel/helpers/package.json').version,
