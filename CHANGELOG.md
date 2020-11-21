@@ -14,6 +14,19 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [3.0.0](https://github.com/crystal-ball/babel-base/compare/v2.0.0...v3.0.0) (2020-11-21)
+
+
+### 💥 Breaking Changes!
+
+* Update import to named and remove hot loader from React apps
+
+
+#### Chore, Docs
+
+* Remove hot loader and default export 💥 (#73)([69ddf15](https://github.com/crystal-ball/babel-base/commit/69ddf15f7a187ad540d67119ee0ce386e058e8a6)), closes [#73](https://github.com/crystal-ball/babel-base/issue/73)
+* Updated env config in README 📝([7ec8eed](https://github.com/crystal-ball/babel-base/commit/7ec8eed6ec43ebf2417eebf96364f2a50242c72a))
+
 ## [2.0.0](https://github.com/crystal-ball/babel-base/compare/v1.15.0...v2.0.0) (2020-10-30)
 
 
