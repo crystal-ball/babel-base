@@ -56,7 +56,6 @@
     "jest": "26.6.3",
     "typescript": "4.1.2"
   },
-  "prettier": "@crystal-ball/prettier-base",
   "config": {
     "commitizen": {
       "path": "@crystal-ball/commitizen-base"
@@ -66,11 +65,6 @@
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
-  },
-  "release": {
-    "extends": [
-      "@crystal-ball/semantic-release-base"
-    ]
   },
   "renovate": {
     "extends": [
