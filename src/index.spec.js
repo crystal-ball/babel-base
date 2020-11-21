@@ -1,6 +1,6 @@
 jest.mock('path')
 
-import babelBase from '.'
+import { babelBase } from '.'
 
 describe('babelBase', () => {
   test('when called with target node, then node babel configs are returned', () => {
