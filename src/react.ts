@@ -88,13 +88,6 @@ export default function reactConfigs(env: Env): TransformOptions {
     // --------------------------------------------------------
     // Plugins
     plugins: [
-      // Auto-loads different transforms by env 😱... In development the `hot`
-      // fn is magically transformed to extend HMR to handle components.
-      // In production, plugin will replace `hot(module)(App)` with `App` which is
-      // important for webpack optimizations
-      // Ref: https://github.com/gaearon/react-hot-loader/issues/1080
-      'react-hot-loader/babel',
-
       // Transform Runtime will transform inline Babel helper fns to imports from
       //   @babel/runtime
       // Passing useESModules disables running helper imports through the common
@@ -122,6 +115,9 @@ export default function reactConfigs(env: Env): TransformOptions {
     ],
 
     env: {
+      development: {
+        /* Namespace created for easy assingment of dev options by consumers */
+      },
       production: {
         plugins: [
           // Strip component prop types in production builds

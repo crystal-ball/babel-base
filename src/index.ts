@@ -13,6 +13,6 @@ type Options = {
   target: 'node' | 'react'
 }
 
-export default function babelBase({ env, target }: Options): TransformOptions {
+export function babelBase({ env, target }: Options): TransformOptions {
   return target === 'node' ? nodeConfigs() : reactConfigs(env)
 }
