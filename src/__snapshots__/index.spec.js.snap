@@ -2,12 +2,13 @@
 
 exports[`babelBase when called with target node, then node babel configs are returned 1`] = `
 Object {
+  "env": Object {},
   "plugins": Array [
     Array [
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.12.5",
+        "version": "7.14.0",
       },
     ],
     Array [
@@ -37,10 +38,19 @@ Object {
 exports[`babelBase when called with target react for dev, then development react configs are returned 1`] = `
 Object {
   "env": Object {
-    "development": Object {},
+    "development": Object {
+      "plugins": Array [
+        "react-refresh/babel",
+      ],
+    },
     "production": Object {
       "plugins": Array [
         "transform-react-remove-prop-types",
+      ],
+    },
+    "test": Object {
+      "presets": Array [
+        "@linaria",
       ],
     },
   },
@@ -49,7 +59,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.12.5",
+        "version": "7.14.0",
       },
     ],
     Array [
@@ -86,10 +96,19 @@ Object {
 exports[`babelBase when called with target react for prod, then production react configs are returned 1`] = `
 Object {
   "env": Object {
-    "development": Object {},
+    "development": Object {
+      "plugins": Array [
+        "react-refresh/babel",
+      ],
+    },
     "production": Object {
       "plugins": Array [
         "transform-react-remove-prop-types",
+      ],
+    },
+    "test": Object {
+      "presets": Array [
+        "@linaria",
       ],
     },
   },
@@ -98,7 +117,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": true,
-        "version": "7.12.5",
+        "version": "7.14.0",
       },
     ],
     Array [
@@ -135,10 +154,19 @@ Object {
 exports[`babelBase when called with target react for test, then test react configs are returned 1`] = `
 Object {
   "env": Object {
-    "development": Object {},
+    "development": Object {
+      "plugins": Array [
+        "react-refresh/babel",
+      ],
+    },
     "production": Object {
       "plugins": Array [
         "transform-react-remove-prop-types",
+      ],
+    },
+    "test": Object {
+      "presets": Array [
+        "@linaria",
       ],
     },
   },
@@ -147,7 +175,7 @@ Object {
       "@babel/plugin-transform-runtime",
       Object {
         "useESModules": false,
-        "version": "7.12.5",
+        "version": "7.14.0",
       },
     ],
     Array [

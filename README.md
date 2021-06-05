@@ -86,22 +86,25 @@ module.exports = function babelConfigs() {
     target: 'node|react',
   })
 
-  /* Optionally override the base configs as needed */
+  /* Optionally override the base configs as needed... */
 
   return baseConfigs
 }
 ```
 
-**3. Setup polyfills**
+## React projects
 
-React projects should also setup polyfills for unsupported language features.
+**1. Install packages**
 
 ```sh
+# Install polyfills included in application bundle
 npm i core-js regenerator-runtime -E
+
+# Install Linaria preset as a dev dependency
+npm i @linaria/babel-preset react-refresh -DE
 ```
 
-ℹ️ Note that because these packages will be included in the application bundle
-they should be installed as `dependencies`.
+**2. Import polyfills**
 
 ```javascript
 // src/index.js
