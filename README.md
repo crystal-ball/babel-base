@@ -101,7 +101,7 @@ module.exports = function babelConfigs() {
 npm i core-js regenerator-runtime -E
 
 # Install Linaria preset as a dev dependency
-npm i @linaria/babel-preset -DE
+npm i @linaria/babel-preset react-refresh -DE
 ```
 
 **2. Import polyfills**
