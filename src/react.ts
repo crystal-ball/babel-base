@@ -1,9 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import { TransformOptions } from '@babel/core'
-
-import { Env } from './types'
+import { BaseTransformOptions, Env } from './types'
 import { testEnv } from './test-env'
 
 /**
@@ -47,7 +45,7 @@ import { testEnv } from './test-env'
  *   compilation) Note that enabling this requires adding `@babel/runtime-corejs3`
  *   as a dependency.
  */
-export default function reactConfigs(env: Env): TransformOptions {
+export default function reactConfigs(env: Env): BaseTransformOptions {
   return {
     // --------------------------------------------------------
     // Presets
@@ -114,14 +112,26 @@ export default function reactConfigs(env: Env): TransformOptions {
       ],
     ],
 
+    // --------------------------------------------------------
+    // Environments
     env: {
       development: {
-        /* Namespace created for easy assingment of dev options by consumers */
+        plugins: [
+          // Babel transform for "Fast Refresh"
+          'react-refresh/babel',
+        ],
       },
       production: {
         plugins: [
           // Strip component prop types in production builds
           'transform-react-remove-prop-types',
+        ],
+      },
+      test: {
+        presets: [
+          // The linaria webpack-loader includes this preset under the hood, provide it for
+          // test envs to prevent crashes
+          '@linaria',
         ],
       },
     },

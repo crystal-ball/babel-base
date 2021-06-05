@@ -1,9 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 
-import { TransformOptions } from '@babel/core'
+import { BaseTransformOptions } from './types'
 
-export default function nodeConfigs(): TransformOptions {
+export default function nodeConfigs(): BaseTransformOptions {
   return {
     presets: [
       [
@@ -57,5 +57,6 @@ export default function nodeConfigs(): TransformOptions {
         { aliases: { '@': path.resolve(fs.realpathSync(process.cwd()), 'src') } },
       ],
     ],
+    env: {},
   }
 }
