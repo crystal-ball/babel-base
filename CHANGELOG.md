@@ -14,6 +14,22 @@ with [@crystal-ball/semantic-release-base](https://github.com/crystal-ball/seman
 > - 🛠 - Fixes
 
 
+## [4.0.0](https://github.com/crystal-ball/babel-base/compare/v3.0.0...v4.0.0) (2021-06-05)
+
+
+### 💥 Breaking Changes!
+
+* React projects must install Refresh and Linaria packages
+
+
+#### ✨ Update
+
+* React project base with Refresh and Linaria support 🎊 (#75)([a0a01ed](https://github.com/crystal-ball/babel-base/commit/a0a01ed179f2103b52df15d89a18bd8edb1dcda5)), closes [#75](https://github.com/crystal-ball/babel-base/issue/75)
+
+#### Chore
+
+* Move Prettier and Semantic Release configs ⚙️ (#74)([e1b116e](https://github.com/crystal-ball/babel-base/commit/e1b116e284c4dea0d2083d5d4dfa15be1de0f08a)), closes [#74](https://github.com/crystal-ball/babel-base/issue/74)
+
 ## [3.0.0](https://github.com/crystal-ball/babel-base/compare/v2.0.0...v3.0.0) (2020-11-21)
 
 
