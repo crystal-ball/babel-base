@@ -48,7 +48,7 @@
     "@babel/cli": "7.16.7",
     "@crystal-ball/commitizen-base": "2.11.0",
     "@crystal-ball/prettier-base": "2.10.0",
-    "@crystal-ball/semantic-release-base": "2.34.0",
+    "@crystal-ball/semantic-release-base": "2.36.0",
     "@types/jest": "27.4.0",
     "@types/node": "16.11.17",
     "eslint-config-eloquence": "19.1.0",
