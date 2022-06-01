@@ -49,11 +49,11 @@
     "@crystal-ball/commitizen-base": "2.11.0",
     "@crystal-ball/prettier-base": "2.12.0",
     "@crystal-ball/semantic-release-base": "2.38.0",
-    "@types/jest": "27.4.1",
-    "@types/node": "16.11.32",
+    "@types/jest": "27.5.1",
+    "@types/node": "16.11.38",
     "eslint-config-eloquence": "19.1.0",
     "jest": "27.5.1",
-    "typescript": "4.6.4"
+    "typescript": "4.7.2"
   },
   "config": {
     "commitizen": {
