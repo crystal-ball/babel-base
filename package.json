@@ -60,11 +60,6 @@
       "path": "@crystal-ball/commitizen-base"
     }
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "renovate": {
     "extends": [
       "github>crystal-ball/renovate-base:library"
